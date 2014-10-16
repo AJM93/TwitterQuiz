@@ -27,10 +27,10 @@ String Header_name = "YogehhDev";
 String Twitter_name = "@YogehhDev";
 
 //all of the stings needed to log on to twitter
-String consumerKey = "7G5gjVwIt88Us9iHFSHw";
-String consumerSecret = "S1HANzh7bC37iSAtICcwRMAl1CeFSq7iSKLzMkANgrQ";
-String accessToken = "74799553-XPrnrcT7bGj8QojESDjW7Jxvp0gwMqSrNlOYyRKg";
-String accessSecret = "jZ9fITEJoSvcsij2t6wXqHlosot3lk1whd8Kkduc";
+String consumerKey = "add your own";
+String consumerSecret = "add your own";
+String accessToken = "add your own";
+String accessSecret = "add your own";
 //creates access token
 AccessToken token;
 
@@ -52,6 +52,7 @@ Question question;
 void setup() {
   //connects to the database holding the questions
   msql = new MySQL( this, "sql2.freesqldatabase.com", "sql210535", "sql210535", "xQ5!bH2*" );
+  //database now not active
   msql.connect();
   //query to select all of the questions/answers from the database
   msql.query("SELECT * FROM questions");
